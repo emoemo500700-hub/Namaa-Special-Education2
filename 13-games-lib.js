@@ -1,0 +1,4 @@
+VIEWS.games=()=>`<h2 class="st" style="margin-top:0">مكتبة الأنشطة</h2><p class="mut" style="margin:0 0 10px;text-align:right">للّعب الحر والجلسات الأونلاين. لأهداف الطالب: ابدأ جلسة أو اضغط 🎒 عند الهدف.</p>
+ <div class="chs" style="flex-wrap:wrap">${Object.keys(LIBS).map(n=>`<button onclick="BG=null;SGACT=null;openCfg('c:${n}')">${n}</button>`).join('')}</div><h3 class="st">رياضيات</h3><div class="chs" style="flex-wrap:wrap">${[['count','الأعداد والعدّ'],['add','الجمع'],['sub','الطرح'],['order','ترتيب الأعداد']].map(([k,l])=>`<button onclick="BG=null;SGACT=null;openCfg('m:${k}')">${l}</button>`).join('')}</div><h3 class="st">حروف النطق</h3>
+ <div class="chs" style="flex-wrap:wrap">${Object.keys(LET).map(l=>`<button onclick="BG=null;SGACT=null;openCfg('l:${l}')">${l}</button>`).join('')}</div>`;
+
